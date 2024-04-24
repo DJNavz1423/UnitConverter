@@ -11,11 +11,10 @@ private:
 	UCvar::speed sp;
 	UCvar::time time;
 	UCvar::digitalStorage store;
-	bool choice;
+	bool choice = false;
 	double value, result;
 	char unitInput;
 	void handleTemperature() {
-		choice = false;
 		std::cout << "\nTEMPERATURE: "
 			<< "\n1. Fahrenheit\n"
 			<< "2. Celsius\n"
@@ -64,7 +63,6 @@ private:
 		}
 	}
 	void handleLength() {
-		choice = false;
 		std::cout << "\nLENGTH: "
 			<< "\n1. Kilometre\n"
 			<< "2. Metre\n"
@@ -203,7 +201,6 @@ private:
 		}
 	}
 	void handleFrequency() {
-		choice = false;
 		std::cout << "\nFREQUENCY: "
 			<< "\n1. Hertz\n"
 			<< "2. Kilohertz\n"
@@ -276,7 +273,6 @@ private:
 		}
 	}
 	void handleSpeed() {
-		choice = false;
 		std::cout << "\nSPEED: "
 			<< "\n1. Miles per hour \n"
 			<< "2. Metre per second\n"
@@ -325,7 +321,6 @@ private:
 		}
 	}
 	void handleTime() {
-		choice = false;
 		std::cout << "\nTIME: "
 			<< "\n1. Second\n"
 			<< "2. Minute\n"
@@ -428,7 +423,6 @@ private:
 		}
 	}
 	void handleDigitalStorage() {
-		choice = false;
 		std::cout << "\nDIGITAL STORAGE: "
 			<< "\n1. Bit\n"
 			<< "2. Byte\n"
