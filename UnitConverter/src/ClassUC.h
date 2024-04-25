@@ -31,7 +31,7 @@ private:
 				std::cout << "\nCELSIUS : " << result;
 
 				result += temp.kelv; // Celsius to Kelvin
-				std::cout << "\n\nKELVIN : " << result << std::endl;
+				std::cout << "\n\nKELVIN : " << result << '\n';
 				choice = true;
 				break;
 			case '2': // Celsius
@@ -42,7 +42,7 @@ private:
 				std::cout << "\nKELVIN : " << result;
 
 				result = (value * temp.div95) + temp.temp32; // Celsius to Fahrenheit
-				std::cout << "\n\nFAHRENHEIT : " << result << std::endl;
+				std::cout << "\n\nFAHRENHEIT : " << result << '\n';
 				choice = true;
 				break;
 			case '3': // Kelvin
@@ -53,7 +53,7 @@ private:
 				std::cout << "\nCELSIUS : " << result;
 
 				result = (value - temp.kelv) * (temp.div95) + temp.temp32; // Kelvin to Fahrenheit
-				std::cout << "\n\nFAHRENHEIT : " << result << std::endl;
+				std::cout << "\n\nFAHRENHEIT : " << result << '\n';
 				choice = true;
 				break;
 			default:
@@ -91,7 +91,7 @@ private:
 				std::cout << "\n\nINCH : " << result;
 
 				result = value / len.MnK; // KM to Miles
-				std::cout << "\n\nMILES : " << result << std::endl;
+				std::cout << "\n\nMILES : " << result << '\n';
 				choice = true;
 				break;
 			case '2': // METRE
@@ -111,7 +111,7 @@ private:
 				std::cout << "\n\nINCH : " << result;
 
 				result = value / len.MnMr; // METRE to Miles
-				std::cout << "\n\nMILES : " << result << std::endl;
+				std::cout << "\n\nMILES : " << result << '\n';
 				choice = true;
 				break;
 			case '3': // CENTIMETRE
@@ -131,7 +131,7 @@ private:
 				std::cout << "\n\nINCH : " << result;
 
 				result = value / len.CmMl; // CM to Miles
-				std::cout << "\n\nMILES : " << result << std::endl;
+				std::cout << "\n\nMILES : " << result << '\n';
 				choice = true;
 				break;
 			case '4': // MILLIMETRE
@@ -151,7 +151,7 @@ private:
 				std::cout << "\n\nINCH : " << result;
 
 				result = value / len.MltrMl; // MMTRE to Miles
-				std::cout << "\n\nMILES : " << result << std::endl;
+				std::cout << "\n\nMILES : " << result << '\n';
 				choice = true;
 				break;
 			case '5': // INCH
@@ -171,7 +171,7 @@ private:
 				std::cout << "\n\nMILLIMETRE : " << result;
 
 				result = value / len.InMl; // INCH to Miles
-				std::cout << "\n\nMILES : " << result << std::endl;
+				std::cout << "\n\nMILES : " << result << '\n';
 				choice = true;
 				break;
 			case '6': // MILES
@@ -191,7 +191,7 @@ private:
 				std::cout << "\n\nMILLIMETRE : " << result;
 
 				result = value * len.InMl; // MILES to INCH
-				std::cout << "\n\nINCH : " << result << std::endl;
+				std::cout << "\n\nINCH : " << result << '\n';
 				choice = true;
 				break;
 			default:
@@ -221,7 +221,7 @@ private:
 				std::cout << "\n\nMEGAHERTZ : " << result;
 
 				result = value / frq.freq3; // hz to ghz
-				std::cout << "\n\nGIGAHERTZ : " << result << std::endl;
+				std::cout << "\n\nGIGAHERTZ : " << result << '\n';
 				choice = true;
 				break;
 			case '2': // khz
@@ -235,7 +235,7 @@ private:
 				std::cout << "\n\nMEGAHERTZ : " << result;
 
 				result = value / frq.freq2; // khz to ghz
-				std::cout << "\n\nGIGAHERTZ : " << result << std::endl;
+				std::cout << "\n\nGIGAHERTZ : " << result << '\n';
 				choice = true;
 				break;
 			case '3': // mhz
@@ -249,7 +249,7 @@ private:
 				std::cout << "\n\nKILOHERTZ : " << result;
 
 				result = value / frq.freq1; // mhz to ghz
-				std::cout << "\n\nGIGAHERTZ : " << result << std::endl;
+				std::cout << "\n\nGIGAHERTZ : " << result << '\n';
 				choice = true;
 				break;
 			case '4': // ghz
@@ -263,7 +263,7 @@ private:
 				std::cout << "\n\nKILOHERTZ : " << result;
 
 				result = value * frq.freq1; // ghz to mhz
-				std::cout << "\n\nMEGAHERTZ : " << result << std::endl;
+				std::cout << "\n\nMEGAHERTZ : " << result << '\n';
 				choice = true;
 				break;
 			default:
@@ -289,7 +289,7 @@ private:
 				std::cout << "\nMETRE PER SECOND : " << result;
 
 				result = value * sp.spd2; // mph to kph
-				std::cout << "\n\nKILOMETRE PER HOUR : " << result << std::endl;
+				std::cout << "\n\nKILOMETRE PER HOUR : " << result << '\n';
 				choice = true;
 				break;
 			case '2': // mps
@@ -300,7 +300,7 @@ private:
 				std::cout << "\nMILES PER HOUR : " << result;
 
 				result = value * sp.spd4; // mps to kph
-				std::cout << "\n\nKILOMETRE PER HOUR : " << result << std::endl;
+				std::cout << "\n\nKILOMETRE PER HOUR : " << result << '\n';
 				choice = true;
 				break;
 			case '3': // kph
@@ -311,7 +311,7 @@ private:
 				std::cout << "\nMILES PER HOUR : " << result;
 
 				result = value / sp.spd4; // kph to mps
-				std::cout << "\n\nMETRE PER SECOND : " << result << std::endl;
+				std::cout << "\n\nMETRE PER SECOND : " << result << '\n';
 				choice = true;
 				break;
 			default:
@@ -345,7 +345,7 @@ private:
 				std::cout << "\n\nDAY : " << result;
 
 				result = value / time.second4; // second to week
-				std::cout << "\n\nWEEK : " << result << std::endl;
+				std::cout << "\n\nWEEK : " << result << '\n';
 				choice = true;
 				break;
 			case '2': // Minute
@@ -362,7 +362,7 @@ private:
 				std::cout << "\n\nDAY : " << result;
 
 				result = value / time.mint2; // minute to week
-				std::cout << "\n\nWEEK : " << result << std::endl;
+				std::cout << "\n\nWEEK : " << result << '\n';
 				choice = true;
 				break;
 			case '3': // Hour
@@ -379,7 +379,7 @@ private:
 				std::cout << "\n\nDAY : " << result;
 
 				result = value / time.HtW; // hour to week
-				std::cout << "\n\nWEEK : " << result << std::endl;
+				std::cout << "\n\nWEEK : " << result << '\n';
 				choice = true;
 				break;
 			case '4': // DAY
@@ -396,7 +396,7 @@ private:
 				std::cout << "\n\nHOUR : " << result;
 
 				result = value / time.DtW; // day to week
-				std::cout << "\n\nWEEK : " << result << std::endl;
+				std::cout << "\n\nWEEK : " << result << '\n';
 				choice = true;
 				break;
 			case '5': // week
@@ -413,7 +413,7 @@ private:
 				std::cout << "\n\nHOUR : " << result;
 
 				result = value * time.DtW; // week to day
-				std::cout << "\n\nDAY : " << result << std::endl;
+				std::cout << "\n\nDAY : " << result << '\n';
 				choice = true;
 				break;
 			default:
@@ -451,7 +451,7 @@ private:
 				std::cout << "\n\nGIGABYTE : " << result;
 
 				result = value / store.eight5; // bit to tb
-				std::cout << "\n\nTERABYTE : " << result << std::endl;
+				std::cout << "\n\nTERABYTE : " << result << '\n';
 				choice = true;
 				break;
 			case '2': // BYTE
@@ -471,7 +471,7 @@ private:
 				std::cout << "\n\nGIGABYTE : " << result;
 
 				result = value / store.one4; // byte to tb
-				std::cout << "\n\nTERABYTE : " << result << std::endl;
+				std::cout << "\n\nTERABYTE : " << result << '\n';
 				choice = true;
 				break;
 			case '3': // kb
@@ -491,7 +491,7 @@ private:
 				std::cout << "\n\nGIGABYTE : " << result;
 
 				result = value / store.one3; // kb to tb
-				std::cout << "\n\nTERABYTE : " << result << std::endl;
+				std::cout << "\n\nTERABYTE : " << result << '\n';
 				choice = true;
 				break;
 			case '4': // mb
@@ -511,7 +511,7 @@ private:
 				std::cout << "\n\nGIGABYTE : " << result;
 
 				result = value / store.one2; // mb to tb
-				std::cout << "\n\nTERABYTE : " << result << std::endl;
+				std::cout << "\n\nTERABYTE : " << result << '\n';
 				choice = true;
 				break;
 			case '5': // gb
@@ -531,7 +531,7 @@ private:
 				std::cout << "\n\nMEGABYTE : " << result;
 
 				result = value / store.one1; // gb to tb
-				std::cout << "\n\nTERABYTE : " << result << std::endl;
+				std::cout << "\n\nTERABYTE : " << result << '\n';
 				choice = true;
 				break;
 			case '6': // tb
@@ -551,7 +551,7 @@ private:
 				std::cout << "\n\nMEGABYTE : " << result;
 
 				result = value * store.one1; // tb to gb
-				std::cout << "\n\nGIGABYTE : " << result << std::endl;
+				std::cout << "\n\nGIGABYTE : " << result << '\n';
 				choice = true;
 				break;
 			default:
