@@ -5,6 +5,7 @@
 
 class UnitConverter {
 private:
+	// instantiate structs
 	UCvar::temperature temp;
 	UCvar::length len;
 	UCvar::frequency frq;
@@ -14,7 +15,7 @@ private:
 	bool choice = false;
 	double value, result;
 	char unitInput;
-	void handleTemperature() {
+	void handleTemperature() { //temperature function
 		std::cout << "\nTEMPERATURE: "
 			<< "\n1. Fahrenheit\n"
 			<< "2. Celsius\n"
@@ -62,7 +63,7 @@ private:
 			}
 		}
 	}
-	void handleLength() {
+	void handleLength() { //length function
 		std::cout << "\nLENGTH: "
 			<< "\n1. Kilometre\n"
 			<< "2. Metre\n"
@@ -200,7 +201,7 @@ private:
 			}
 		}
 	}
-	void handleFrequency() {
+	void handleFrequency() { //frequency function
 		std::cout << "\nFREQUENCY: "
 			<< "\n1. Hertz\n"
 			<< "2. Kilohertz\n"
@@ -272,7 +273,7 @@ private:
 			}
 		}
 	}
-	void handleSpeed() {
+	void handleSpeed() { //speed function
 		std::cout << "\nSPEED: "
 			<< "\n1. Miles per hour \n"
 			<< "2. Metre per second\n"
@@ -320,7 +321,7 @@ private:
 			}
 		}
 	}
-	void handleTime() {
+	void handleTime() { // time function
 		std::cout << "\nTIME: "
 			<< "\n1. Second\n"
 			<< "2. Minute\n"
@@ -422,7 +423,7 @@ private:
 			}
 		}
 	}
-	void handleDigitalStorage() {
+	void handleDigitalStorage() { // digital storage function
 		std::cout << "\nDIGITAL STORAGE: "
 			<< "\n1. Bit\n"
 			<< "2. Byte\n"
@@ -561,7 +562,7 @@ private:
 		}
 	}
 public:
-	void run() {
+	void run() { // display function
 		char choice1;
 		bool running = true;
 		do {
